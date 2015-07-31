@@ -36,8 +36,8 @@ class Predictor:
                         'hour'       : '15',  # (UTC)
                         'min'        : '0',
                         'second'     : '0',
-                        'day'        : '31',
-                        'month'      : '7',
+                        'day'        : '5',
+                        'month'      : '8',
                         'year'       : '2015',
                         'ascent'     : '5',  # (m/s)
                         'burst'      : '30000',  # (m)
@@ -63,8 +63,8 @@ class Predictor:
             landing_coordinates = float(coordinates[-2].split(',')[1]), float(coordinates[-2].split(',')[2])
 
             self.coords[landing_coordinates] = launch_coordinates  # Populates dictionary of Landing: Launch coordinates
-            print ('For launch coordinates {0}, you got {1} for landing coordinates. {2}'
-                   .format(launch_coordinates, landing_coordinates, len(self.coords)))
+            print ('For launch coordinates {0}, you got {1} for landing coordinates.'
+                   .format(launch_coordinates, landing_coordinates))
         except Exception:  # Blank or malformed content was returned. Scrap the coordinate.
             print 'Failed to determine this coordinate.'
             return

@@ -13,8 +13,8 @@ self.payload = {'launchsite' : 'Other',
                 'hour'       : '15',  # (UTC)
                 'min'        : '0',
                 'second'     : '0',
-                'day'        : '31',
-                'month'      : '7',
+                'day'        : '5',
+                'month'      : '8',
                 'year'       : '2015',
                 'ascent'     : '5',  # (m/s)
                 'burst'      : '30000',  # (m)
